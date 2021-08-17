@@ -1,0 +1,67 @@
+Notes:
+
+EEPROM
+
+connect to USB_Prog3 and install twitest app into USB_Prog3
+connect IIC pins to camera EEPROM
+on power up IIC is busy, then both lines go low
+with camera connected to PC and app running, there is some activity on IIC, then it is idle (both high).
+
+EEPROM is 24LC64
+pin 1 = low
+pin 2 = high
+pin 3 = high
+pin 7 = low
+
+so address = 110
+
+
+9 May 2007
+
+error discovered - need to add a resistor between Q1 & Q2.
+need to add resistor in series on ENABLE line.
+These have been fixed in V1 PCB. Since PCB not released, version has not been changed.
+
+1 June 07
+
+PCB arrived.
+Need to fix sensor device - change guard gap (solder resist) to 5th (from 10) as tracks 
+between pads are clear. Careful soldering will be required!
+
+4 July 2007
+
+PCB was assembled last week.
+Problem in enable circuit - polarity is wrong - I did a double-negative :-(
+Worked around it by jumpering across one of the transistors.
+PCB guard gap on transistors also too large cousing shorts.
+Serial EEPROM from original C328 module was fitted (yet to build a programmer)
+Reset is not reliable - need to tweak cap value or fit the reset IC.
+Some testing was performed to see if it would respond to a sync command - and it did.
+Camera has been set up to power from USB and connect to a USB serial port.
+Tonight I ran up the C328 camera test app. After some playing around with COM port
+allocations (app assumes COM1) it works! Took a number of test images. Images are a
+bit rough, but I think this is mostly the high jpeg compressed in place and the poor
+light conditions.
+Camera was next to HF rig, and gave strong signal at 3.777 MHz
+
+
+18 March 2008
+
+Need to look at new PCB version.
+serial data out - serial data input on IHU is CMOS input. 3V logic OP will not be enough. Change camera to be feed by 5V, and allow for a 5V TTL driver on the camera.
+
+12 May 2008
+
+Continued woprk on the new PCB
+ - allow for due EEPROMs - main and backup. Use the RXD state at reset to determine which.
+   two methods to acheive this:
+   1. use RXD to change ID# pins on the controller
+   2. use RXD to change A# pins on the two EEPROMs.
+   Unsure if ID# pins have any effect after reset, so 2nd option may be the safest.
+   Use option resistors to allow feature to be disabled.
+ - series R on OP of reset IC (U8)
+ - series Rs on IIC to permit programming
+ - Change EEPROM WP to a pull-up
+ - support for other lens mount
+ - support 5V driven output driver so that camera can feed 5V CMOS logic
+

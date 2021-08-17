@@ -1,0 +1,25 @@
+#
+# 
+#
+
+include ../AVR/mk_deflt
+
+# MCU name
+MCU = atmega8
+
+# Target file name (without extension).
+##TARGET = USB_Prog
+TARGET = twitest
+
+# List C source files here. (C dependencies are automatically generated.)
+##SRC = $(TARGET).c ../AVR/AVRSys.c ../AVRLib/AHDLCMsgDriver.c ../AVRLib/CSMBusDrv.c ../AVRLib/CSMMsg.c ../cGenLib/MessageSimple.c ../AVR/SPI_Driver.c 
+SRC = $(TARGET).c
+
+# List any extra directories to look for include files here.
+#     Each directory must be seperated by a space.
+EXTRAINCDIRS = ../AVR ../AVRLib ../cGenLib ../common 
+
+# ---------------------------------------------------------------------------
+include ../AVR/make_avr
+
+# END

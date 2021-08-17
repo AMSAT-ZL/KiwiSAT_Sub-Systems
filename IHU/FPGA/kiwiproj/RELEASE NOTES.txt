@@ -1,0 +1,39 @@
+RELEASE NOTES for HULOGIC project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+------------------------------------------
+Issue 1, 22-Feb-2010, Jonathan Bromley:
+------------------------------------------
+
+Initial release.
+
+
+
+------------------------------------------
+Issue 1A, 23-Feb-2010, Jonathan Bromley:
+------------------------------------------
+
+** Documentation:
+Added HM628512C memory data sheet to docs directory.
+Added this release notes document.
+Minor typo fixes and clarifications to programmer's reference, now at Rev.1.0.
+
+** Testbench and simulation:
+Added waveform setup file for Modelsim.
+Added write hold time checks to memory models.
+Minor improvements to memory backdoor access and error injection.
+Verified compatibility with Icarus Verilog and Modelsim Altera Starter Edition.
+Improved Tcl scripts to observe ModelSim GUI/batch operating mode, and detect
+use of Altera Starter Edition which doesn't support SDF timing annotation.
+
+** RTL design
+Modified write cycle timing to avoid write hold violations.
+
+------------------------------------------
+Issue 2A, 29-Jun-2010, Jonathan Bromley:
+------------------------------------------
+
+Minor testbench tidy-ups.
+Fix pin 10/11 swap error.
+Provide Synplify project (.prq) files for both sizes of FPGA.
+

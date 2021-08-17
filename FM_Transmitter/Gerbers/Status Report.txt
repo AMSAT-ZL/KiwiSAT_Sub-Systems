@@ -1,0 +1,25 @@
+CAM Outputs Generation Report
+for 'CAM Outputs for FM TX RevF.cam'
+at 23:19:22 on 12-Oct-2008
+
+
+'Gerber Output 1'
+'FM TX RevF.GTL' generated
+'FM TX RevF.GBL' generated
+'FM TX RevF.GTO' generated
+'FM TX RevF.GBO' generated
+'FM TX RevF.GTP' generated
+'FM TX RevF.GBP' generated
+'FM TX RevF.GTS' generated
+'FM TX RevF.GBS' generated
+'FM TX RevF.GKO' generated
+'FM TX RevF.GM1' generated
+'FM TX RevF.GM5' generated
+'FM TX RevF.GPT' generated
+'FM TX RevF.GPB' generated
+'FM TX RevF.GD1' generated
+'FM TX RevF.GG1' generated
+'FM TX RevF.REP' generated
+
+
+Total number of generated files = 16

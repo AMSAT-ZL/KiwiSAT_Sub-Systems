@@ -1,0 +1,60 @@
+Date: Sun, 14 May 2006 14:04:49 +1200
+To: "Kelvin Barnsdale" <KB.EW@xtra.co.nz>
+From: Mark Atherton <markaren1@xtra.co.nz>
+Subject: System Integration
+Cc: fredk@kcbbs.gen.nz, Terry and Wendy Osborne <osbornes@paradise.net.nz>, "Terry Carrell" <tcarrell@xtra.co.nz>
+Bcc: 
+X-Attachments: C:\temp\DB9 Interface.pdf;
+In-Reply-To: 
+References: 
+
+Hi Kelvin,
+
+Are you available Thursday evening (18 May), preferably early ?
+
+I make some time available to help with the demo if that is of use to you, I can travel to your place if you want.
+
+The UHF RX is ready to go:
+
+Regards,
+
+Mark A
+
+======================================
+
+KiwiSAT UHF FM RX interface
+
+RF input
+	Female SMA
+	435.245MHz
+
+Male DB9 - see attached PDF
+	PIN 1,6 POWER, 12V @ 35mA
+
+	PIN 2,7 GROUND
+
+	PIN 3, SQUELCH
+		0V - No Audio
+		6V - Audio
+		Threshold around -123dBm
+
+	PIN 4, DATA OUT
+		500mV p-p
+		AC coupled
+		No de-emphasis
+		No Squelch
+
+	PIN 5, TEMPERATURE
+		Not fitted
+
+	PIN 8, AUDIO OUT
+		500mV p-p
+		AC coupled
+		De-emphasis per Philips SA605A data sheet
+		Muted by Squelch
+
+	PIN 9, BUFFERED_RSSI
+		3V No signal
+		4.5V SQUELCH opens
+		6V Quieting
+		Currently driving 100uA meter through 60k

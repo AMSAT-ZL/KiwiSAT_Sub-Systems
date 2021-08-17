@@ -1,0 +1,81 @@
+Bill of Material for FM TX RevF.Bom
+
+Used Part Type               Designator Footprint      Description            
+==== ======================= ========== ============== ====================== 
+2    0.5p                    C14 C44    2012C          Capacitor 0805         
+4    1k                      R4 R9 R18  2012R          Resistor SMD           
+                             R30                                              
+14   1n                      C1 C6 C9   2012C          Capacitor 0805         
+                             C11 C13                                          
+                             C17 C22                                          
+                             C31 C32                                          
+                             C39 C40                                          
+                             C42 C46                                          
+                             C47                                              
+1    1p5                     C21        2012C          Capacitor 0805         
+2    1p                      C7 C43     2012C          Capacitor 0805         
+2    1uH                     L2 L5      1210           Choke smd              
+1    2SC908                  Q5         TO-5           NPN RF TRANSISTOR      
+2    2SC3356                 Q2 Q3      SOT-23S        UHF NPN transistor     
+1    4u7                     C2         2012C          Capacitor 0805         
+1    5.5t/3.5mm              L16        COIL5.5/3S     Air wound coil         
+1    5.5t/3mm                L9         COIL5.5/3S     Air wound coil         
+1    5p6                     C20        2012C          Capacitor 0805         
+1    6.5t/4S                 L13        COIL6.5/4S     Air wound coil         
+1    6k8                     R32        2012R          Resistor SMD           
+1    8v2                     D1         SOT-23S        Zener diode            
+4    10k                     R6 R10 R19 2012R          Resistor SMD           
+                             R28                                              
+1    10p                     C36        2012C          Capacitor 0805         
+1    12vDC                   PAD1       PAD70S         Wiring pad             
+1    15k                     R7         2012R          Resistor SMD           
+1    16MHz                   X1         XTAL/UM        Generic Crystal        
+1    18p                     C30        2012C          Capacitor 0805         
+1    22P                     C10        2012C          Capacitor 0805         
+1    22R                     R17        2012R          Resistor SMD           
+1    27p                     C29        2012C          Capacitor 0805         
+2    33p                     C34 C35    2012C          Capacitor 0805         
+1    39P                     C16        2012C          Capacitor 0805         
+3    47P                     C12 C28    2012C          Capacitor 0805         
+                             C45                                              
+3    47R                     R1 R3 R13  2012R          Resistor SMD           
+2    47k                     R2 R5      2012R          Resistor SMD           
+1    56P                     C15        2012C          Capacitor 0805         
+4    62nH                    L6 L7 L8   TOKO136KEEPOUT COIL AND SCREENING CAN 
+                             L10                                              
+1    68k                     R21        2012R          Resistor SMD           
+3    100k                    R23 R29    2012R          Resistor SMD           
+                             R31                                              
+5    100n                    C3 C18 C25 2012C          Capacitor 0805         
+                             C37 C48                                          
+5    100p                    C19 C23    2012C          Capacitor 0805         
+                             C27 C41                                          
+                             C50                                              
+1    120R                    R14        2012R          Resistor SMD           
+2    120nH                   L3 L4      TOKO136KEEPOUT COIL AND SCREENING CAN 
+1    120p                    C26        2012C          Capacitor 0805         
+1    180p                    C8         2012C          Capacitor 0805         
+1    220p                    C5         2012C          Capacitor 0805         
+1    240R                    R12        2012R          Resistor SMD           
+1    270R                    R8         2012R          Resistor SMD           
+1    270p                    C4         2012C          Capacitor 0805         
+1    330p                    C24        2012C          Capacitor 0805         
+2    560k                    R20 R22    2012R          Resistor SMD           
+1    AOT                     R11        2012R          Resistor SMD           
+2    BAS16                   D2 D5      SOT-23S        Switching diode        
+2    BBY40                   D3 D4      SOT-23S        VARICAP 5P/8V          
+1    BFR92A                  Q1         SOT-23S        UHF NPN transistor     
+1    COIL1.5/2.5S            L11        COIL3.5/3S     Air wound coil         
+1    DB9RA_PLG               P1         DB9RAM_18316   9 way Dsub pins RA     
+1    DNF 12nH                L17        0805           Choke smd              
+1    DNF                     R16        1206           Resistor SMD           
+1    DNF                     R15        2012R          Resistor SMD           
+2    FB 120E                 L1 L12     0805           Choke smd              
+1    FQD11P06                Q7         DPAK-H         P CHAN MOSFET          
+1    LM358D                  IC1        SO-8           Dual Op Amp            
+1    PTT                     PAD4       PAD70S         Wiring pad             
+1    PWROUT                  PAD7       PAD70S         Wiring pad             
+1    SMA-RA                  S1         SMA-RA         PCB BNC SOCKET METAL   
+1    SMC-RA                  S2         SMA-RA         PCB BNC SOCKET METAL   
+1    TEMP                    PAD5       PAD70S         Wiring pad             
+1    TEMPRTN                 PAD6       PAD70S         Wiring pad             

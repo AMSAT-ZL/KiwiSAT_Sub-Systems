@@ -1,0 +1,26 @@
+CAM Outputs Generation Report
+for 'CAM Outputs for Horizon-Sensor.cam'
+at 10:33:03 on 23-Apr-2007
+
+
+'Earth-Horizon'
+'Horizon-Sensor.TXT' generated
+'Horizon-Sensor.DRL' generated
+'Horizon-Sensor.DRR' generated
+
+'Gerber Output 1'
+'Horizon-Sensor.GTL' generated
+'Horizon-Sensor.GBL' generated
+'Horizon-Sensor.GTO' generated
+'Horizon-Sensor.GBO' generated
+'Horizon-Sensor.GTP' generated
+'Horizon-Sensor.GBP' generated
+'Horizon-Sensor.GTS' generated
+'Horizon-Sensor.GBS' generated
+'Horizon-Sensor.GM1' generated
+'Horizon-Sensor.GD1' generated
+'Horizon-Sensor.GG1' generated
+'Horizon-Sensor.REP' generated
+
+
+Total number of generated files = 15

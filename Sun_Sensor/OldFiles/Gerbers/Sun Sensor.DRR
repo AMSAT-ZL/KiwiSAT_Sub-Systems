@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Sun Sensor.PCB   23-Apr-2007  10:35:37
+---------------------------------------------------------------------------
+
+
+
+Layer Pair : TopLayer to BottomLayer
+ASCII File : NCDrillOutput.TXT
+EIA File   : NCDrillOutput.DRL
+
+Tool         Hole Size          Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        39mil (0.9906mm)         6                1.86 Inch (47.30 mm)
+T2        250mil (6.35mm)          1                0.84 Inch (21.21 mm)
+---------------------------------------------------------------------------
+Totals                             7                2.70 Inch (68.51 mm)
+
+Total Processing Time : 00:00:00

@@ -1,0 +1,148 @@
+*************************************************************
+FileName = Sun Sensor.GBR
+AutoAperture = True
+*************************************************************
+Generating : 
+      File : Sun Sensor.GTL
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GBL
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GTO
+
+    Adding Layer      : TopOverlay
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GBO
+
+    Adding Layer      : BottomOverlay
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GTP
+
+    Adding Layer      : TopPaste
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GTS
+
+    Adding Layer      : TopSolder
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GBS
+
+    Adding Layer      : BottomSolder
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Sun Sensor.GKO
+
+    Adding Layer      : KeepOutLayer
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Sun Sensor.GD1
+
+    Adding Layer      : DrillDrawing
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+
+Used DCodes :
+    D12
+    D16
+    D17
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Sun Sensor.GG1
+
+    Adding Layer      : DrillGuide
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+
+Used DCodes :
+    D23
+*************************************************************
+

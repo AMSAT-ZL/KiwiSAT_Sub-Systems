@@ -1,0 +1,25 @@
+CAM Outputs Generation Report
+for 'CAM Outputs for Sun Sensor.cam'
+at 10:35:37 on 23-Apr-2007
+
+
+'NC Drill Output 1'
+'Sun Sensor.TXT' generated
+'Sun Sensor.DRL' generated
+'Sun Sensor.DRR' generated
+
+'Gerber Output 1'
+'Sun Sensor.GTL' generated
+'Sun Sensor.GBL' generated
+'Sun Sensor.GTO' generated
+'Sun Sensor.GBO' generated
+'Sun Sensor.GTP' generated
+'Sun Sensor.GTS' generated
+'Sun Sensor.GBS' generated
+'Sun Sensor.GKO' generated
+'Sun Sensor.GD1' generated
+'Sun Sensor.GG1' generated
+'Sun Sensor.REP' generated
+
+
+Total number of generated files = 14

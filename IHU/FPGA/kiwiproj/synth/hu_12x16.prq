@@ -1,0 +1,12 @@
+resultfile hu_fpga.qds pASIC;
+
+part p12x16b;
+package pl68;
+
+sourcefile ..\rtl_src\spi_ctlr.v  verilog work;
+sourcefile ..\rtl_src\edac.v      verilog work;
+sourcefile ..\rtl_src\errcount.v  verilog work;
+sourcefile ..\rtl_src\hulogic.v   verilog work;
+sourcefile ..\rtl_src\hu_fpga.v   verilog work;
+
+properties ..\rtl_src\hu_fpga.sc;

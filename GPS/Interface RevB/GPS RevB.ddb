@@ -1,0 +1,21 @@
+[Design Root]
+Version=1.0.0
+[Directory]
+GPS Interface RevB.Sch=Sch
+GPS Interface RevB.Pcb=PCB
+GPS Interface RevB.cfg=Text
+GPS Interface RevB.DRC=Text
+GPS Interface RevB.REP=Text
+Preview GPS Interface RevB.PPC=PCBPrint
+[GPS Interface RevB.Sch]
+Editor Kind=Sch
+[GPS Interface RevB.Pcb]
+Editor Kind=PCB
+[GPS Interface RevB.cfg]
+Editor Kind=Text
+[GPS Interface RevB.DRC]
+Editor Kind=Text
+[GPS Interface RevB.REP]
+Editor Kind=Text
+[Preview GPS Interface RevB.PPC]
+Editor Kind=PCBPrint

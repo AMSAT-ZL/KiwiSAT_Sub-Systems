@@ -1,0 +1,10 @@
+Designator Footprint          Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment   
+
+J2         CON_1_SQ      964.567mil    433.071mil    964.567mil    433.071mil    964.567mil    433.071mil  T        360.00 CON_01    
+J3         CON_1_SQ      964.567mil    748.032mil    964.567mil    748.032mil    964.567mil    748.032mil  T        360.00 CON_01    
+J4         CON_1_SQ      216.535mil    433.071mil    226.378mil    433.071mil    216.535mil    433.071mil  T        360.00 CON_01    
+J5         CON_1_SQ      964.567mil    590.551mil    964.567mil    590.551mil    964.567mil    590.551mil  T        360.00 CON_01    
+IC1        IC_S5991-01    590.551mil    590.551mil    590.551mil    590.551mil    390.551mil    915.551mil  T          0.00 S5991-01  
+J6         CON_1_SQ      216.535mil    590.551mil    226.378mil    590.551mil    216.535mil    590.551mil  B        180.00 CON_01    
+J1         CON_1_SQ      216.535mil    748.032mil    216.535mil    738.189mil    216.535mil    748.032mil  B        360.00 CON_01    
+
