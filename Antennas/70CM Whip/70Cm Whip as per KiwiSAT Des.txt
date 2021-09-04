@@ -1,0 +1,4 @@
+70CM whip 1/4 lambda nominal on small ground plane.
+Used for Uplink RX and 70CM Beacon (2 antennas)
+
+
