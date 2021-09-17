@@ -1,0 +1,184 @@
+Return-path: <bill@hsmicrowave.com>
+Received: from fep15.clear.net.nz (fep15 [192.168.16.116])
+ by local-daemon (CLEAR Net Mail) with ESMTP id <0JXF00M2YRHUFJ60@local-daemon>
+ for p/osbornes@clear.net.nz; Sun, 09 Mar 2008 12:49:08 +1300 (NZDT)
+Received: from mxin2-orange.clear.net.nz
+ (lb2-srcnat.clear.net.nz [203.97.32.237]) by mx7.clear.net.nz (CLEAR Net Mail)
+ with ESMTP id <0JXF003UBRHUB210@mx7.clear.net.nz> for
+ osbornes@paradise.net.nz; Sun, 09 Mar 2008 12:49:06 +1300 (NZDT)
+Received: from smtp117.sbc.mail.sp1.yahoo.com ([69.147.64.90])
+ by mxin2-orange.clear.net.nz with SMTP; Sun, 09 Mar 2008 12:49:06 +1300
+Received: (qmail 20166 invoked from network); Sat, 08 Mar 2008 23:49:04 +0000
+Received: from unknown (HELO ?75.45.120.89?)
+ (billress@sbcglobal.net@75.45.120.89 with plain)
+ by smtp117.sbc.mail.sp1.yahoo.com with SMTP; Sat, 08 Mar 2008 23:49:04 +0000
+Date: Sat, 08 Mar 2008 15:49:04 -0800
+From: Bill Ress <bill@hsmicrowave.com>
+Subject: Re: Solar cell readings - 2nd set
+In-reply-to: <47D3D92B.6573.1FC43D@fredk.kcbbs.gen.nz>
+X-Envelope-To: osbornes@paradise.net.nz
+To: Fred Kennedy <fredk@kcbbs.gen.nz>
+Cc: hans2@novozone.co.nz, osbornes@paradise.net.nz, g.shirville@btinternet.com,
+ G0MRF@aol.com
+Message-id: <47D325F0.7030402@hsmicrowave.com>
+X-YMail-OSG:
+ GktQ3D8VM1lZK3cMAIb3GqZcgjM.8puQ7x0aQq2VDDulAeK0FT05j1Ouy8IvIEPPbgRK_w.wKA--
+X-Yahoo-Newman-Property: ymail-3
+References: <47D2930E.582.117E7A7@fredk.kcbbs.gen.nz>
+ <47D30D69.6090205@hsmicrowave.com> <47D3D92B.6573.1FC43D@fredk.kcbbs.gen.nz>
+User-Agent: Thunderbird 1.5.0.14 (Windows/20071210)
+Original-recipient: rfc822;osbornes@paradise.net.nz
+X-Antivirus: AVG for E-mail 7.5.516 [269.21.4/1309]
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+
+Aaah! Yes very clear indeed now Fred ---- Thanks.
+
+So I can assume that they went through thermal vacuum O.K. By any 
+chance.........did you take before and after thermal vacuum cell data. 
+In other words you didn't notice any performance deterioration?? Or is 
+that test yet to come?
+
+So it appears that the up shot of the whole effort to date is that these 
+cells are winners (considering the going price) and that I'd better keep 
+an eye out for him to be selling more.
+
+Nice machining job on the fixture!!
+
+Regards and again thanks for the data...Bill - N6GHz
+
+Fred Kennedy wrote:
+> Hi Bill,
+>          Sorry for any confusion.
+>  Both 1,2 and 3  and 4,5 and 6 use the same two groups of cells.
+>   And the two groups of 6 cells are made up from the 12 cells that I placed in the vac tank at 
+> 60 degrees C for 40hrs earlier in the week.
+>    For identification I called them the Right Hand and the Left Hand set as they appeared 
+> when you looked at them on the test stand.   The "parallel" configuration was just that; - the 
+> outputs of the two groups of 6 were connected together at the output.
+>    The difference between the 1,2 and 3 tests and the 4,5 and 6 tests was about 3hrs!
+>   I was hoping the the second run of the tests - at around mid-day - would give an increased 
+> output because of the reduction in air mass. (At its lowest when overhead) That of course 
+> depends on the cloud and haze condition remaining constant but nature doesn't work like 
+> that - unless one is in the Mojave Desert perhaps?!
+>    I'm not sure if Hans has any special thoughts on the "running in parallel" question.  I'm just 
+> the mechanical guy!!     Hans seems quite happy with the results so far.  So, bearing in 
+> mind that the cell pieces used were not the top of the selection range, things are looking 
+> good to me.
+>   One I missed the other day. Yes I machined up the jig for assembling the cells and vital it 
+> was.  I suppose that a couple of cells could be attached together reasonably well by eye - 
+> using small plates to support the cells with the interconnects clear of the bench.   Trying to 
+> couple up a string of 3 or more would need a jig if they were to look "proper job" when 
+> completed!! Even with the jig I found it necessary to get my XYL to apply finger pressure on 
+> the pair being worked on with the soldering iron.  Both the interconnects and the back of the 
+> cell pieces solder very well indeed - once cleaned and free of the oxide.    
+>    Hope that helps, Bill
+>  Very best
+> Fred         
+>
+>
+> Date sent:      	Sat, 08 Mar 2008 14:04:25 -0800
+> From:           	Bill Ress <bill@hsmicrowave.com>
+> To:             	Fred Kennedy <fredk@kcbbs.gen.nz>
+> Copies to:      	hans2@novozone.co.nz, osbornes@paradise.net.nz, 
+> g.shirville@btinternet.com,
+>        	G0MRF@aol.com
+> Subject:        	Re: Solar cell readings - 2nd set
+>
+>   
+>> Hi Fred,
+>>
+>> First - thanks for sharing the data!
+>>
+>> Second, I think I might have gotten off track following the data. What 
+>> is the physical cell difference between Tecstar 1, 2 and 3 and Tecstar 
+>> 4, 5, and 6. I know you thermal vacuum tested a batch which I believe 
+>> are the 6 plus 6 string set tested as1, 2 and 3.  Have the 6 plus 6 set 
+>> in 4, 5 and 6 had the same testing?
+>>
+>> One thing I noticed was the difference in optimum the power of the two 6 
+>> cell strings when then are just paralleled. In fact the data shows a 
+>> reduces power output of the parallel string of 6 compared to the optimum 
+>> power point for the individual series string of 6. It's not a great 
+>> deal, but I'm thinking that perhaps there's a better way to combine the 
+>> strings versus simply paralleling them. Or have I missed something??
+>>
+>> Keep the data coming. I like data!!
+>>
+>> Regards...Bill - N6GHz
+>>
+>> Fred Kennedy wrote:
+>>     
+>>> Hi Guys,
+>>>               The second set attached.  Taken just after mid day local.
+>>>    There were some wisps of cloud about and not as clear as before.   
+>>> The sky temp reading is up indicating that there is some haze about.   (Taken with a distant 
+>>> reading - no contact - thermometer by the way - pointed about 30 degrees clear of the Sun. 
+>>> Any cloud gives a positive reading and haze - almost imperceptible visually - does change 
+>>> the negative reading quite substantially. So haze is/was about.)
+>>>     I'm not too sure about the shading figures of the first set when in Parallel!  (Set 3)
+>>>   Can't actually remember shading both sides at once (!!)  but certainly did on the second set 
+>>> (Set 6)  Probably did on the first but its 'all on' to get the results down fast before things 
+>>> change.   The last set of parallel figures we (Jen and I) started 3 times as there was definitely 
+>>> some haze interference and the voltages showed it.  What a game!!! 
+>>>      Back to CAD - far more predictable!!!
+>>>    Have a good weekend Guys
+>>>  Very best
+>>> Fred
+>>>  
+>>>   
+>>> ------------------------------------------------------------------------
+>>>
+>>> The following section of this message contains a file attachment
+>>> prepared for transmission using the Internet MIME message format.
+>>> If you are using Pegasus Mail, or any other MIME-compliant system,
+>>> you should be able to save it or view it from within your mailer.
+>>> If you cannot, please ask your system administrator for assistance.
+>>>
+>>>    ---- File information -----------
+>>>      File:  Tecstar Set 4.xls
+>>>      Date:  8 Mar 2008, 12:50
+>>>      Size:  17408 bytes.
+>>>      Type:  Excel-sheet
+>>>   
+>>> ------------------------------------------------------------------------
+>>>
+>>> The following section of this message contains a file attachment
+>>> prepared for transmission using the Internet MIME message format.
+>>> If you are using Pegasus Mail, or any other MIME-compliant system,
+>>> you should be able to save it or view it from within your mailer.
+>>> If you cannot, please ask your system administrator for assistance.
+>>>
+>>>    ---- File information -----------
+>>>      File:  Tecstar Set 5.xls
+>>>      Date:  8 Mar 2008, 12:56
+>>>      Size:  17408 bytes.
+>>>      Type:  Excel-sheet
+>>>   
+>>> ------------------------------------------------------------------------
+>>>
+>>> The following section of this message contains a file attachment
+>>> prepared for transmission using the Internet MIME message format.
+>>> If you are using Pegasus Mail, or any other MIME-compliant system,
+>>> you should be able to save it or view it from within your mailer.
+>>> If you cannot, please ask your system administrator for assistance.
+>>>
+>>>    ---- File information -----------
+>>>      File:  Tecstar Set 6.xls
+>>>      Date:  8 Mar 2008, 13:02
+>>>      Size:  17920 bytes.
+>>>      Type:  Excel-sheet
+>>>   
+>>>       
+>
+>
+>
+>   
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition. 
+Version: 7.5.516 / Virus Database: 269.21.4/1309 - Release Date: 3/03/2008 6:50 p.m.
+

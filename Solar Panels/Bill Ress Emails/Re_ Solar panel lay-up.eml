@@ -1,0 +1,89 @@
+Return-path: <bill@hsmicrowave.com>
+Received: from fep14.clear.net.nz (fep14 [192.168.16.115])
+ by local-daemon (CLEAR Net Mail) with ESMTP id <0JX800IPZDFSQC10@local-daemon>
+ for p/osbornes@clear.net.nz; Wed, 05 Mar 2008 13:05:23 +1300 (NZDT)
+Received: from mxin3-orange.clear.net.nz
+ (lb2-srcnat.clear.net.nz [203.97.32.237]) by mx6.clear.net.nz (CLEAR Net Mail)
+ with ESMTP id <0JX8002ULDKSWM00@mx6.clear.net.nz> for
+ osbornes@paradise.net.nz; Wed, 05 Mar 2008 13:05:16 +1300 (NZDT)
+Received: from smtp124.sbc.mail.sp1.yahoo.com ([69.147.64.97])
+ by mxin3-orange.clear.net.nz with SMTP; Wed, 05 Mar 2008 13:05:15 +1300
+Received: (qmail 47771 invoked from network); Wed, 05 Mar 2008 00:05:14 +0000
+Received: from unknown (HELO ?75.45.105.61?)
+ (billress@sbcglobal.net@75.45.105.61 with plain)
+ by smtp124.sbc.mail.sp1.yahoo.com with SMTP; Wed, 05 Mar 2008 00:05:13 +0000
+Date: Tue, 04 Mar 2008 16:05:14 -0800
+From: Bill Ress <bill@hsmicrowave.com>
+Subject: Re: Solar panel lay-up
+In-reply-to: <47CE8658.4890.AF5A9A@fredk.kcbbs.gen.nz>
+X-Envelope-To: osbornes@paradise.net.nz
+To: Fred Kennedy <fredk@kcbbs.gen.nz>
+Cc: osbornes@paradise.net.nz, markaren1@xtra.co.nz, hans2@novozone.co.nz,
+ phil@tmd.co.nz, g.shirville@btinternet.com
+Message-id: <47CDE3BA.2080908@hsmicrowave.com>
+X-YMail-OSG:
+ aCf5xB4VM1mJ4A1dO7sLi6oBk9yG_VV7wCRe.94yNOHVhMJNZXc9ki4uMeTZ6GTI6P0LpUzbPw--
+X-Yahoo-Newman-Property: ymail-3
+References: <47CE8658.4890.AF5A9A@fredk.kcbbs.gen.nz>
+User-Agent: Thunderbird 1.5.0.14 (Windows/20071210)
+Original-recipient: rfc822;osbornes@paradise.net.nz
+X-Antivirus: AVG for E-mail 7.5.516 [269.21.4/1309]
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+
+Fred...I had good success using a silver/metal cleaner applied with a 
+stiff bristle small paint brush followed by paint brush cleaning with 
+alcohol and then using a water soluble flux when tinning the tabs with 
+solder. With the fragility of the tabs it seems that keeping it a 
+"liquid" process was best. But, I'm sure you might find other ways.
+
+Perhaps Graham, David, Howard et. al. have some ideas from the SSETI 
+experience.
+
+I like your fixture. Did you just recently machine it?
+
+Regards...Bill - N6GHz
+
+Fred Kennedy wrote:
+> Hi Guys,
+>               I'm about at the point of laying -up the two six cell panels that Hans 
+> has asked for to use with the BCR Mk 2 prototype but before I start I'm a 
+> touch worried about what appears to be oxide film on some of the cell 
+> connector tags.  (Couple of snaps attached - you'll notice the tags in 
+> question )     The film looks very similar to what appears to be a "heat 
+> affected zone" along the edges of some of the cells.  Doesn't seem to make 
+> much difference to the performance BTW - they just look 'substandard".
+>   The oxide film on the tags (which are extremely fragile, being a measured 
+> 1.8 thou.thick!!) comes off readily with a tiny scraper - even a worn 
+> (rounded) edged screw-driver works - and a plastic tooth pick with a bit of 
+> persistence).  Too much pressure however bruises the interconnects and 
+> distorts them and the possibility of ripping them is a worry as well.
+>      Was wondering if anyone has one of the "pen type" PCB cleaning 
+> devices that RS Components have on offer.  They appeared to be brass 
+> bristled brushes at a reasonable price but I read no further immediately I 
+> spotted the "order in 10's" which was way OTT for my expected 
+> requirement.
+>   Now.  Try as I might I can't find the part/no again!   Now that I've worked on 
+> the oxide and found that it does readily come off given the right 
+> scraper/scratcher - but is hellish fragile -  it was worth another look.
+>    Are any of you professionals familiar with it - perhaps used one?
+>   Tried to run some solder (lead based with 2% silver) onto a partly scraped 
+> tag and the solder flashed onto the cleaned part but hesitated a bit when it 
+> came to the clean/oxide 'join'.  It did eventually flow onto the other half but 
+> the film was clearly affecting the flow. (with a 5mm solder bit and >2 thou. 
+> base material there was plenty of heat..............!!!)
+>      We have to get it right and we wont be able to see the joint face when the 
+> job is done.     
+>    Very best,
+> Fred
+>
+>
+>   
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition. 
+Version: 7.5.516 / Virus Database: 269.21.4/1309 - Release Date: 3/03/2008 6:50 p.m.
+

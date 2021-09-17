@@ -1,0 +1,80 @@
+Return-path: <bill@hsmicrowave.com>
+Received: from fep15.clear.net.nz (fep15 [192.168.16.116])
+ by local-daemon (CLEAR Net Mail) with ESMTP id <0JWX00MZGBOGDY60@local-daemon>
+ for p/osbornes@clear.net.nz; Thu, 28 Feb 2008 13:50:41 +1300 (NZDT)
+Received: from mxin1-orange.clear.net.nz
+ (lb2-srcnat.clear.net.nz [203.97.32.237]) by mx7.clear.net.nz (CLEAR Net Mail)
+ with ESMTP id <0JWX00HQ5BOFNG20@mx7.clear.net.nz> for
+ osbornes@paradise.net.nz; Thu, 28 Feb 2008 13:50:40 +1300 (NZDT)
+Received: from smtp118.sbc.mail.sp1.yahoo.com ([69.147.64.91])
+ by mxin1-orange.clear.net.nz with SMTP; Thu, 28 Feb 2008 13:50:39 +1300
+Received: (qmail 29334 invoked from network); Thu, 28 Feb 2008 00:50:38 +0000
+Received: from unknown (HELO ?75.45.121.99?)
+ (billress@sbcglobal.net@75.45.121.99 with plain)
+ by smtp118.sbc.mail.sp1.yahoo.com with SMTP; Thu, 28 Feb 2008 00:50:37 +0000
+Date: Wed, 27 Feb 2008 16:50:38 -0800
+From: Bill Ress <bill@hsmicrowave.com>
+Subject: Re: Solar cells - initial set-up and trial 2
+In-reply-to: <47C6B621.8492.11F0465@fredk.kcbbs.gen.nz>
+X-Envelope-To: osbornes@paradise.net.nz
+To: Fred Kennedy <fredk@kcbbs.gen.nz>
+Cc: hans2@novozone.co.nz, osbornes@paradise.net.nz, g.shirville@btinternet.com
+Message-id: <47C6055E.1070102@hsmicrowave.com>
+X-YMail-OSG:
+ 1hAaKC0VM1mKm.CTXIrXCs9jLpEanbwj2jwM.Yw3uC9afKtavWv2wS3l.Pe3txDBuiDuty6IIg--
+X-Yahoo-Newman-Property: ymail-3
+References: <47C6B621.8492.11F0465@fredk.kcbbs.gen.nz>
+User-Agent: Thunderbird 1.5.0.14 (Windows/20071210)
+Original-recipient: rfc822;osbornes@paradise.net.nz
+X-Antivirus: AVG for E-mail 7.5.516 [269.21.1/1300]
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+
+Hello all,
+
+Nothing like getting "data." It looks like about 445 mW maximum power at 
+1.87 V and 238 mA and 335 mW where I'll be "nominally" using them - 2 
+volts (for 62 degrees). That's great since I'll be using 2 cells in 
+series per face to charge the primary cells running at 3.6 volts. Aaah - 
+looking good!
+
+Thanks for the data and the pixs!! Keep 'em  coming.
+
+I located a distributor for the Continental connectors who is quoting 
+about $3.00 a piece but the minimum quantity buy is 100 pieces per part 
+number - ouch!
+
+How many do you plan on using???
+
+Regards...Bill - N6GHz
+
+Fred Kennedy wrote:
+> Hi Guys,
+>               Sun at its zenith - and still reasonably clear.  Final couple of reading 
+> sets added - plus a few typos' corrected!
+> See attached.
+>   F  
+>
+>   
+> ------------------------------------------------------------------------
+>
+> The following section of this message contains a file attachment
+> prepared for transmission using the Internet MIME message format.
+> If you are using Pegasus Mail, or any other MIME-compliant system,
+> you should be able to save it or view it from within your mailer.
+> If you cannot, please ask your system administrator for assistance.
+>
+>    ---- File information -----------
+>      File:  Solar cell evaluation 2.xls
+>      Date:  28 Feb 2008, 13:21
+>      Size:  17408 bytes.
+>      Type:  Excel-sheet
+>   
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition. 
+Version: 7.5.516 / Virus Database: 269.21.1/1300 - Release Date: 26/02/2008 7:50 p.m.
+
