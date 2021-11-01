@@ -1,0 +1,4 @@
+Notes:
+This folder contains some .dxf files.
+These can be read using a DXFViewer.
+This one http://www.dxfviewer.com/ seems to work.
