@@ -1,0 +1,93 @@
+Return-Path: <KB.EW@xtra.co.nz>
+Delivered-To: osbornes@paradise.net.nz
+X-Envelope-To: osbornes@paradise.net.nz
+Received: (qmail 20008 invoked from network); 7 May 2006 10:14:42 -0000
+Received: from tclsnelb1-src-1.paradise.net.nz (HELO linda-4.paradise.net.nz) (203.96.152.172)
+  by internal-pop3-6.paradise.net.nz with SMTP; 7 May 2006 10:14:42 -0000
+Received: from smtp-3.paradise.net.nz
+ (tclsnelb1-src-1.paradise.net.nz [203.96.152.172]) by linda-4.paradise.net.nz
+ (Paradise.net.nz) with ESMTP id <0IYW00H4P4BWS5@linda-4.paradise.net.nz> for
+ osbornes@paradise.net.nz; Sun, 07 May 2006 22:11:56 +1200 (NZST)
+Received: from mta206-rme.xtra.co.nz (mta206-rme.xtra.co.nz [210.86.15.58])
+	by smtp-3.paradise.net.nz (Postfix) with ESMTP id 8602611FD015	for
+ <osbornes@paradise.net.nz>; Sun, 07 May 2006 22:11:56 +1200 (NZST)
+Received: from mta1-rme.xtra.co.nz ([210.86.15.193])
+ by mta206-rme.xtra.co.nz with ESMTP id
+ <20060507101156.GCSC22037.mta206-rme.xtra.co.nz@mta1-rme.xtra.co.nz>; Sun,
+ 07 May 2006 22:11:56 +1200
+Received: from barnsdale ([210.55.87.198]) by mta1-rme.xtra.co.nz with SMTP id
+ <20060507101155.JBA28130.mta1-rme.xtra.co.nz@barnsdale>; Sun,
+ 07 May 2006 22:11:55 +1200
+Date: Sun, 07 May 2006 22:07:08 +1200
+From: Elaine and Kelvin <KB.EW@xtra.co.nz>
+Subject: Re: UHF FM RX Progress
+To: fredk@kcbbs.gen.nz, Terry Carrell <tcarrell@xtra.co.nz>,
+ Terry and Wendy Osborne <osbornes@paradise.net.nz>,
+ Mark Atherton <markaren1@xtra.co.nz>
+Message-id: <008b01c671be$5a015700$b05737d2@barnsdale>
+X-MIMEOLE: Produced By Microsoft MimeOLE V5.00.2615.200
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+X-Priority: 3
+X-MSMail-priority: Normal
+References: <6.2.3.4.0.20060506204659.01bb5928@pop3.xtra.co.nz>
+X-Antivirus: AVG for E-mail 7.1.385 [268.5.5/333]
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=iso-8859-1
+
+Mark
+Well done, at least you got the DB9 connector the right way! I am working my
+way though an annoying problem on the FMTX, the first (48MHz) filter tuning
+is very touchy, almost suggesting reaction feedback to the oscillator,
+causing the tuned circuit Q to be very large. I have seen this before in
+similar designs.
+FRED - we have the VHF/UHF antennas up in the air ready for the transponder
+in Branch05 Christchurch.
+Thanks
+Kelvin
+
+----- Original Message -----
+From: Mark Atherton <markaren1@xtra.co.nz>
+To: <fredk@kcbbs.gen.nz>; Terry Carrell <tcarrell@xtra.co.nz>; Terry and
+Wendy Osborne <osbornes@paradise.net.nz>; Kelvin Barnsdale
+<KB.EW@xtra.co.nz>
+Sent: Saturday, May 06, 2006 9:00 PM
+Subject: UHF FM RX Progress
+
+
+> Gents,
+>
+> So far so good.
+>
+> There is still a fair amount of effort to finish off the Local Osc,
+> but after a couple of hours work, I have about +6dBm at 413.845MHz. I
+> can throttle this back, which will cut down power consumption.
+>
+> Major features of the PCB seem OK, I have sent a board back to Fred
+> with SMA, DB9 and the bottom 0805 de-coupling cap fitted. These are
+> all of the major skyline components.
+>
+> Electrically the PCB I am working on has DB9, EMC protection, Idiot
+> Diode, 8V LO regulator and the whole 413MHz chain seems healthy. The
+> unit came up 500Hz off frequency, which isn't too bad. IF bandwidth
+> is planned at 30kHz.
+>
+> See attached photo.
+>
+> I am not promising a live demo for the conference yet, but for my
+> money, the LO is the difficult bit.
+>
+> Regards,
+>
+> Mark A.
+>
+>
+
+
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition.
+Version: 7.1.385 / Virus Database: 268.5.5/333 - Release Date: 5/05/2006
+

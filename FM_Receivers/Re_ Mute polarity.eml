@@ -1,0 +1,75 @@
+Return-Path: <KB.EW@xtra.co.nz>
+Delivered-To: osbornes@paradise.net.nz
+X-Envelope-To: osbornes@paradise.net.nz
+Received: (qmail 25752 invoked from network); 12 Feb 2006 10:07:46 -0000
+Received: from tclsnelb1-src-1.paradise.net.nz (HELO linda-2.paradise.net.nz) (203.96.152.172)
+  by internal-pop3-3.paradise.net.nz with SMTP; 12 Feb 2006 10:07:46 -0000
+Received: from smtp-1.paradise.net.nz
+ (tclsnelb1-src-1.paradise.net.nz [203.96.152.172]) by linda-2.paradise.net.nz
+ (Paradise.net.nz) with ESMTP id <0IUK006IMK4YMD@linda-2.paradise.net.nz> for
+ osbornes@paradise.net.nz; Sun, 12 Feb 2006 23:07:46 +1300 (NZDT)
+Received: from avmta3-rme.xtra.co.nz (avmta3-rme.xtra.co.nz [210.86.15.158])
+	by smtp-1.paradise.net.nz (Postfix) with ESMTP id 9C3D71114796	for
+ <osbornes@paradise.net.nz>; Sun, 12 Feb 2006 23:07:46 +1300 (NZDT)
+Received: from mta1-rme.xtra.co.nz ([210.86.15.192])
+ by avmta3-rme.xtra.co.nz with ESMTP id
+ <20060212100746.XBBH6830.avmta3-rme.xtra.co.nz@mta1-rme.xtra.co.nz>; Sun,
+ 12 Feb 2006 23:07:46 +1300
+Received: from web1-rme.xtra.co.nz ([210.55.86.109])
+ by mta1-rme.xtra.co.nz with ESMTP id
+ <20060212100745.NNHJ16143.mta1-rme.xtra.co.nz@web1-rme.xtra.co.nz>; Sun,
+ 12 Feb 2006 23:07:45 +1300
+Received: from barnsdale ([210.55.86.109])
+ by web1-rme.xtra.co.nz (InterMail vG.2.00.00.00 201-2161-108-101-20050407)
+ with SMTP id <20060212100745.OARH420.web1-rme.xtra.co.nz@barnsdale>; Sun,
+ 12 Feb 2006 23:07:45 +1300
+Date: Sat, 11 Feb 2006 22:42:50 +1300
+From: Elaine and Kelvin <KB.EW@xtra.co.nz>
+Subject: Re: Mute polarity
+To: Mark Atherton <markaren1@xtra.co.nz>
+Cc: Terry and Wendy Osborne <osbornes@paradise.net.nz>
+Message-id: <013c01c62ef1$ed429e80$4f5637d2@barnsdale>
+MIME-version: 1.0
+X-MIMEOLE: Produced By Microsoft MimeOLE V5.00.2615.200
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: 7bit
+X-Priority: 3
+X-MSMail-priority: Normal
+References: <6.2.3.4.0.20060212072249.01bb9050@pop3.xtra.co.nz>
+X-NAS-Language: English
+X-NAS-Bayes: #0: 0; #1: 1
+X-NAS-Classification: 0
+X-NAS-MessageID: 232
+X-NAS-Validation: {C93A23D1-D2EB-4328-804E-1B1C0AABAB07}
+
+Mark
+I guess you mean the mute output from the FM RX? This, I guess, goes to the
+processor, so the polarity can be chosen by the software.
+As usual, I only have a partial view of what is going on!
+Thanks
+Kelvin
+
+----- Original Message -----
+From: Mark Atherton <markaren1@xtra.co.nz>
+To: Terry and Wendy Osborne <osbornes@paradise.net.nz>; Kelvin Barnsdale
+<KB.EW@xtra.co.nz>
+Sent: Sunday, February 12, 2006 7:25 AM
+Subject: Mute polarity
+
+
+> Guys,
+>
+> If you can spare me a moment...
+>
+> Which polarity do you read the mute signal to be ?
+>
+> Mute pin >1.7V = audio muted ?
+>
+> Comments please.
+>
+> Thanks,
+>
+> Mark.
+
+

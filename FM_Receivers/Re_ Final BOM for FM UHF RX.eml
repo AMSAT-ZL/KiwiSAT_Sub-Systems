@@ -1,0 +1,113 @@
+Return-Path: <clayton.gumbrell@gmail.com>
+Delivered-To: osbornes@paradise.net.nz
+X-Envelope-To: osbornes@paradise.net.nz
+Received: (qmail 5233 invoked from network); 11 Oct 2006 21:59:44 -0000
+Received: from tclsnelb1-src-1.paradise.net.nz (HELO linda-1.paradise.net.nz) (203.96.152.172)
+  by internal-pop3-2.paradise.net.nz with SMTP; 11 Oct 2006 21:59:44 -0000
+Received: from smtp-3.paradise.net.nz
+ (tclsnelb1-src-1.paradise.net.nz [203.96.152.172]) by linda-1.paradise.net.nz
+ (Paradise.net.nz) with ESMTP id <0J6Z00CNCRRJLI@linda-1.paradise.net.nz> for
+ osbornes@paradise.net.nz; Thu, 12 Oct 2006 10:59:44 +1300 (NZDT)
+Received: from wx-out-0506.google.com (wx-out-0506.google.com [66.249.82.236])
+	by smtp-3.paradise.net.nz (Postfix) with ESMTP id 9F7E4F67406	for
+ <osbornes@paradise.net.nz>; Thu, 12 Oct 2006 10:58:55 +1300 (NZDT)
+Received: by wx-out-0506.google.com with SMTP id s15so323176wxc for
+ <osbornes@paradise.net.nz>; Wed, 11 Oct 2006 14:58:55 -0700 (PDT)
+Received: by 10.70.35.1 with SMTP id i1mr1529350wxi; Wed,
+ 11 Oct 2006 14:58:55 -0700 (PDT)
+Received: from ClaytonG ( [203.171.42.7]) by mx.google.com with ESMTP id
+ 39sm2148586wrl.2006.10.11.14.58.52; Wed, 11 Oct 2006 14:58:54 -0700 (PDT)
+Date: Thu, 12 Oct 2006 10:58:50 +1300
+From: Clayton Gumbrell <clayton@camsensor.co.nz>
+Subject: Re: Final BOM for FM UHF RX
+Sender: Clayton Gumbrell <clayton.gumbrell@gmail.com>
+To: Mark Atherton <markaren1@xtra.co.nz>
+Cc: Fred Kennedy <fredk@kcbbs.gen.nz>, tcarrell@xtra.co.nz,
+ Terry and Wendy Osborne <osbornes@paradise.net.nz>, KB.EW@xtra.co.nz
+Message-id: <006501c6ed80$71b51f10$0b9ba8c0@cesolutions.co.nz>
+X-MIMEOLE: Produced By Microsoft MimeOLE V6.00.2800.1807
+X-Mailer: Microsoft Outlook Express 6.00.2800.1807
+X-Priority: 3
+X-MSMail-priority: Normal
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;        s=beta; d=gmail.com;
+ h=received:message-id:from:to:cc:references:subject:date:mime-version:content-type:content-transfer-encoding:x-priority:x-msmail-priority:x-mailer:x-mimeole:sender;
+ b=CTEB6teggLJ9n80q+RLaQr64XctBrx4jltmqDa7nuoPIBTmNb+8PIT/MXevOH40poQ8LxiLWtkeVHwah2gl6X5z6LJjl+D8zveGl0Woy+KlbLalLTUpyIkc+IfptTUb+KXbDvMRNyVl+8g5OfLi896A1HUzHFRCQGHynRlpbOhg=
+References: <6.2.3.4.0.20061008162335.01c05bd8@pop3.xtra.co.nz>
+X-Antivirus: AVG for E-mail 7.1.394 [268.13.0/464]
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=iso-8859-1
+
+Hi All,
+
+Just spoke to Craig Shearer at EMC Ltd here in Lower Hutt. They would be
+happy to place this PCB at no charge for labour or for any parts they
+already have.
+
+He suggested that the PCB be hand placed and reflow soldered. A stencil
+would be necessary - a stainless steel one as the mylar stencils are no
+good. But he suggested that an approach to Capital Circuits (in Petone,
+Lower Hutt) may get these for nothing also (usually cost $285 or so).
+
+Capital circuits may also be willing to sponsor the PCB manufacturing. They
+do up to 4 layer PCBs. I regularly use them.
+
+I suggest that you plan what PCBs need to be done and when and try to
+consolidate these onto a single panel as much as possible. In that way we
+will only be asking for one panel for the whole thing rather than for each
+sub-system. Once you have this sorted I can approach Capital Circuits.
+
+Regards
+    Clayton
+
+============================
+Clayton Gumbrell
+CE Solutions Limited / CamSensor Technologies Limited
+Level 2, ANZ House,
+21-23 Andrews Ave
+PO Box 30353
+Lower Hutt 5040
+NEW ZEALAND
+phone +64 4 5702171    fax +64 4 5702191
+mobile +64 21 652986
+============================
+
+----- Original Message ----- 
+From: "Mark Atherton" <markaren1@xtra.co.nz>
+To: "Clayton Gumbrell" <clayton@camsensor.co.nz>
+Cc: "Fred Kennedy" <fredk@kcbbs.gen.nz>; <tcarrell@xtra.co.nz>; "Terry and
+Wendy Osborne" <osbornes@paradise.net.nz>; <KB.EW@xtra.co.nz>
+Sent: Sunday, October 08, 2006 4:32 PM
+Subject: Final BOM for FM UHF RX
+
+
+> Clayton,
+>
+> Attached is complete documentation for the build of two FM UHF RX
+> assemblies. This package includes PCB design file, Top layer silk
+> screen, BOM in Excel format and medium resolution photo of the final
+assembly.
+>
+> I can kit up and pass on the items that we will be supplying to the
+> assembly house when they are needed. I have one unloaded PCB, I hope
+> that Fred has the second one (can you mail it to me please Fred). I
+> have also included some Thro Hole stuff in the BOM.
+>
+> With this BOM applied to the PCB, the assembly will be about 95%
+> complete, I have left off stuff from my prototype inductor kit,
+> crystals and crystal filters. Please discard my previous data on this
+> subject, this attachment is complete and has been checked so I am
+> happy for comments and for us to build two units from this documentation.
+>
+> Regards,
+>
+> Mark A
+
+
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition.
+Version: 7.1.394 / Virus Database: 268.13.0/464 - Release Date: 5/10/2006
+

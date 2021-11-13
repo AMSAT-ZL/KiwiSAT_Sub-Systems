@@ -1,0 +1,32 @@
+Hi Terry,
+
+If Nick is nice enough to offer to do the work tidying up the 
+grounds, that will be fine by me !
+
+I have been through the schematic and checked all of the sensitive 
+grounds - these are High Q UHF earth returns. I don't think there is 
+much point worrying about an extra nH at 21MHz, but certainly no harm 
+up at 400MHz.
+
+Anyway, High Q, UHF grounds are as follows: C1, C3, C7, C8, C28, C29, 
+C49, C45, C53, C54, C55, C56, C57, C58, C60, also IC2 pin 6, IC2 pin 
+8 and TR2 Emitter - that should reduce the work significantly.
+
+I would *really* like to keep the one de-coupling cap on the bottom 
+side of the PCB, this is the only really sensitive part around the FM IF IC.
+
+IC4 only has stability capacitors, there are no circulating currents, 
+so the layout shouldn't be a problem. However, if Nick wants to re-do 
+it, be my guest.
+
+I assume that the overlayed vias messed up the hole count, which 
+makes sense. How on earth did he find that !!
+
+And yes, a new set of Gerbers would be great.
+
+I am very grateful for his help and always interested in learning...
+
+Regards,
+
+Mark.
+

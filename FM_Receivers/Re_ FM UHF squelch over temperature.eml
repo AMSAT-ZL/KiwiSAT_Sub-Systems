@@ -1,0 +1,88 @@
+Return-Path: <clayton.gumbrell@gmail.com>
+Delivered-To: osbornes@paradise.net.nz
+X-Envelope-To: osbornes@paradise.net.nz
+Received: (qmail 13651 invoked from network); 6 Oct 2006 08:26:16 -0000
+Received: from tclsnelb1-src-1.paradise.net.nz (HELO linda-5.paradise.net.nz) (203.96.152.172)
+  by internal-pop3-2.paradise.net.nz with SMTP; 6 Oct 2006 08:26:16 -0000
+Received: from smtp-3.paradise.net.nz
+ (tclsnelb1-src-1.paradise.net.nz [203.96.152.172]) by linda-5.paradise.net.nz
+ (Paradise.net.nz) with ESMTP id <0J6P00BFLGRR5H@linda-5.paradise.net.nz> for
+ osbornes@paradise.net.nz; Fri, 06 Oct 2006 21:26:16 +1300 (NZDT)
+Received: from py-out-1112.google.com (py-out-1112.google.com [64.233.166.182])
+	by smtp-3.paradise.net.nz (Postfix) with ESMTP id 5F823B0ABB1	for
+ <osbornes@paradise.net.nz>; Fri, 06 Oct 2006 21:26:15 +1300 (NZDT)
+Received: by py-out-1112.google.com with SMTP id s49so934322pyc for
+ <osbornes@paradise.net.nz>; Fri, 06 Oct 2006 01:26:14 -0700 (PDT)
+Received: by 10.35.10.17 with SMTP id n17mr5456459pyi; Fri,
+ 06 Oct 2006 01:26:14 -0700 (PDT)
+Received: by 10.35.11.18 with HTTP; Fri, 06 Oct 2006 01:26:13 -0700 (PDT)
+Date: Fri, 06 Oct 2006 21:26:13 +1300
+From: Clayton Gumbrell <clayton@camsensor.co.nz>
+Subject: Re: FM UHF squelch over temperature
+In-reply-to: <4526C7CA.1288.7267DB@fredk.kcbbs.gen.nz>
+Sender: clayton.gumbrell@gmail.com
+To: Fred Kennedy <fredk@kcbbs.gen.nz>
+Cc: Mark Atherton <markaren1@xtra.co.nz>, tcarrell@xtra.co.nz,
+ osbornes@paradise.net.nz, KB.EW@xtra.co.nz, clayton@camsensor.co.nz
+Message-id: <cd0eaf030610060126hb8fb15coe0b0e3a984647aef@mail.gmail.com>
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;        s=beta; d=gmail.com;
+ h=received:message-id:date:from:sender:to:subject:cc:in-reply-to:mime-version:content-type:references:x-google-sender-auth;
+ b=LeGOqE9nv7urQE/ziGReyC5DwxMzOurZJ2FkfaGKVHEWW29QPhqz5WFQWizlqKS0Y0vsqgCUrEwvwtd3eJIzWgwnzgjBEyOAwIBZCVrAx+vd+OEk+OJObtnBAtatUszcMV9QAXjOG1B09b8e9q3Wao3esHvYDz5jJvLLJvHFOBM=
+X-Google-Sender-Auth: 1573983bc70e20e1
+References: <4526A9AA.3035.27148B6@fredk.kcbbs.gen.nz>
+ <6.2.3.4.0.20061006191408.01c81a88@pop3.xtra.co.nz>
+ <4526C7CA.1288.7267DB@fredk.kcbbs.gen.nz>
+X-Antivirus: AVG for E-mail 7.1.394 [268.13.0/464]
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="=======AVGMAIL-45275DB94D07======="
+
+--=======AVGMAIL-45275DB94D07=======
+Content-Type: multipart/alternative; boundary="----=_Part_2920_32369101.1160123173986"
+
+------=_Part_2920_32369101.1160123173986
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+On 06/10/06, Fred Kennedy <fredk@kcbbs.gen.nz> wrote:
+>
+>       Clayton.  Is there anyone that you could point us to to undertake
+> the work for a
+> reasonable sum?
+
+
+
+
+For smaller runs I have used EMC Ltd here in Lower Hutt. They do some hand
+> assembly and are also set up for small machine placed runs. I was planning
+> to get their help in lifting some of the ICs on the camera module if we go
+> that way. Send the info (BOM and layout diagram is probably all that is
+> needed) and I'll pay them a visit. Depending on density I think they can use
+> milar stencils which helps with costs - esp for 1-offs.
+
+------=_Part_2920_32369101.1160123173986
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<br>
+<div><span class="gmail_quote">On 06/10/06, <b class="gmail_sendername">Fred Kennedy</b> &lt;<a href="mailto:fredk@kcbbs.gen.nz">fredk@kcbbs.gen.nz</a>&gt; wrote:</span>
+<blockquote class="gmail_quote" style="PADDING-LEFT: 1ex; MARGIN: 0px 0px 0px 0.8ex; BORDER-LEFT: #ccc 1px solid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clayton.&nbsp;&nbsp;Is there anyone that you could point us to to undertake the work for a<br>reasonable sum?</blockquote>
+
+<div>&nbsp;</div>
+<div>&nbsp;</div><br>
+<blockquote class="gmail_quote" style="PADDING-LEFT: 1ex; MARGIN: 0px 0px 0px 0.8ex; BORDER-LEFT: #ccc 1px solid">For smaller runs I have used EMC Ltd here in Lower Hutt. They do some hand assembly and are also set up for small machine placed runs. I was planning to get their help in lifting some of the ICs on the camera module if we go that way. Send the info (BOM and layout diagram is probably all that is needed) and I'll pay them a visit. Depending on density I think they can use milar stencils which helps with costs - esp for 1-offs.
+</blockquote></div>
+
+------=_Part_2920_32369101.1160123173986--
+--=======AVGMAIL-45275DB94D07=======
+Content-Type: text/plain; x-avg=cert; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Content-Description: "AVG certification"
+
+No virus found in this incoming message.
+Checked by AVG Free Edition.
+Version: 7.1.394 / Virus Database: 268.13.0/464 - Release Date: 5/10/2006
+
+--=======AVGMAIL-45275DB94D07=======--
