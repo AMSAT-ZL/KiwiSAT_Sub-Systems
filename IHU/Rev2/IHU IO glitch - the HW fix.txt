@@ -1,0 +1,420 @@
+From: "Clayton Gumbrell" <clayton@cesolutions.co.nz>
+To: "Ian Ashley" <iana@kcbbs.gen.nz>; "Fred Kennedy" <fredk@kcbbs.gen.nz>
+Cc: "Terry Osborne" <osbornes@paradise.net.nz>
+Subject: IHU IO glitch - the HW fix
+Date: Saturday, 29 January 2011 10:47 a.m.
+
+I have made and confirmed the necessary HW change to correct the IO glitch. 
+In the process I totally destroyed U51 (it already had a fix since it is Mk1 
+PCB, so my fix was not easy - nor did I have the right tools for the job!)
+Anyway, I strapped a new device on top of a nearby chip and wired it up. All 
+good now. The oscilloscope proves that the mod works as expected.
+
+You will need to do the necessary mod to your IHU, although in many cases 
+the glitch will not show itself.
+I will document the change needed in the HW description, but the 
+modification required is to lift pin 4 of U51 (currently connected to ADDR3) 
+and instead connect it to ALE (eg pin 11 of U12;  pin 11 of U14; or pin1 of 
+U68).
+
+Get it done by someone who knows what they are doing (i.e. not me - see 
+photo!)
+
+Clayton
+
+
+----- Original Message ----- 
+From: "Fred Kennedy" <fredk@kcbbs.gen.nz>
+To: "Clayton Gumbrell" <clayton@cesolutions.co.nz>; "Ian Ashley" 
+<iana@kcbbs.gen.nz>
+Sent: Friday, January 28, 2011 4:23 PM
+Subject: Re: new test app
+
+
+> Some you win Clayton.!!
+> Be interesting to see how it goes.  I've plenty of space epoxy coming to 
+> provide support for the
+> links/legs so no problem there.
+>    Whatever.  We have to solve the problem!
+> F
+>
+> Date sent: Fri, 28 Jan 2011 15:49:06 +1100
+> Subject: Re: new test app
+> From: Clayton Gumbrell <clayton@cesolutions.co.nz>
+> To: Fred Kennedy <fredk@kcbbs.gen.nz>
+> Copies to: Ian Ashley <iana@kcbbs.gen.nz>
+>
+>>
+>> No the circuit in question is discrete logic and has nothing to do with 
+>> the FPGA.
+>> It can be fixed with one jumper wire - which will go along with the other 
+>> 3 already present!
+>>
+>> On 28 January 2011 14:58, Fred Kennedy <fredk@kcbbs.gen.nz> wrote:
+>>     Hi Guys,
+>>           Now there's a thought!  There must be tons of room on the FPGA 
+>> chip. We very nearly got
+>>     our existing FPGA on one of half its capacity?
+>>     Can the ALE correction be compensated for on that in some way!!
+>>      Very best
+>>     Fred
+>>
+>>
+>>     Date sent:       Fri, 28 Jan 2011 15:45:09 +1300
+>> From:          Ian Ashley <iana@kcbbs.gen.nz>
+>>     Send reply to:     iana@kcbbs.gen.nz
+>> To:           Clayton Gumbrell <clayton@cesolutions.co.nz>
+>>     Copies to:       Fred Kennedy <fredk@kcbbs.gen.nz>, Ian Ashley 
+>> <iana@kcbbs.gen.nz>
+>>
+>> Subject:        Re: new test app
+>>
+>> > Hi Clayton, tried the new DrvTest and the CW beacon is now working
+>> > correctly, although the speed could be doubled!
+>> > I've tried all the commands and they seem to be OK.
+>> >
+>> > Re the timing problem, could that be fixed with another FPGA?
+>> >
+>> > Regards
+>> > Ian
+>> >
+>> > On 28/01/2011 12:45 a.m., Clayton Gumbrell wrote:
+>> > > try this one.
+>> > >
+>> > > It does not exhibit the glitch problem, but more by good luck than
+>> > > anything else - I need to do further work on this.
+>> > >
+>> > > Currently the important thing is the bus cycle that occurs just 
+>> > > before
+>> > > the IO operation. If this is a valid IO address than we could get a
+>> > > glitch. It is effected by the CPUs instruction pre-fetch, so I just 
+>> > > need
+>> > > to find a way to ensure the previous bus cycle is predicable and not 
+>> > > a
+>> > > problem value. Possibly the insertion of some NOP (no-operation)
+>> > > instructions will suffice here.
+>> > >
+>> > > Note - ADC operations are temporarily disabled.
+>> > >
+>> > > Clayton
+>> > >
+>> > > ----- Original Message ----- From: "Ian Ashley" <iana@kcbbs.gen.nz>
+>> > > To: "Clayton Gumbrell" <clayton@cesolutions.co.nz>
+>> > > Sent: Wednesday, January 26, 2011 8:58 PM
+>> > > Subject: Re: new test app
+>> > >
+>> > >
+>> > >> Hi Clayton, good, that confirms what happens here too.
+>> > >> The CW beacon is on bit 02 at FED3. So writeio fed3 04 should enable
+>> > >> the cw carrier.
+>> > >> Regards
+>> > >> Ian
+>> > >>
+>> > >> On 26/01/2011 7:28 p.m., Clayton Gumbrell wrote:
+>> > >>> I have just added leds to the OD outputs of the IHU. It looks like 
+>> > >>> the
+>> > >>> morse enable is turning on the FM beacon. I will investigate 
+>> > >>> further!
+>> > >>>
+>> > >>> Clayton
+>> > >>>
+>> > >>> ----- Original Message ----- From: "Ian Ashley" <iana@kcbbs.gen.nz>
+>> > >>> To: "Clayton Gumbrell" <clayton@cesolutions.co.nz>
+>> > >>> Cc: "Fred Kennedy" <fredk@kcbbs.gen.nz>; "Ian Ashley"
+>> > >>> <iana@kcbbs.gen.nz>
+>> > >>> Sent: Tuesday, January 25, 2011 10:18 PM
+>> > >>> Subject: Re: new test app
+>> > >>>
+>> > >>>
+>> > >>>> Hi Clayton, please disregard a previous email about problems with 
+>> > >>>> the
+>> > >>>> j cmd among others.
+>> > >>>>
+>> > >>>> I ran eForth and had some funny results, so went to your DrvTest 
+>> > >>>> and
+>> > >>>> also odd results. Thought about it and suspect that the RAM is not
+>> > >>>> being zeroed when the separation switch is pushed up, as there is
+>> > >>>> still power coming from the BCR, but on releasing the switch the 
+>> > >>>> kwmon
+>> > >>>> signon is sent.
+>> > >>>> So I switched off the BCR supply and the separation switch for a
+>> > >>>> minute and reloaded DrvTest and all the cmds from a to n appear to
+>> > >>>> work OK.
+>> > >>>>
+>> > >>>> The only problem I could find is with the CW bcn A command which 
+>> > >>>> turns
+>> > >>>> on the 70cm bcn and the 2m FM TX. Pressing B then a turns all
+>> > >>>> transmitters off.
+>> > >>>>
+>> > >>>> Also the 1200 AFSK is not correct yet.
+>> > >>>>
+>> > >>>> Maybe a zeroing of the memory or similar would help at startup.
+>> > >>>>
+>> > >>>> Sorry for the previous message.
+>> > >>>>
+>> > >>>> Re the FEC, I don't know anything about that.
+>> > >>>>
+>> > >>>> Regards
+>> > >>>> Ian
+>> > >>>>
+>> > >>>> On 25/01/2011 12:16 a.m., Clayton Gumbrell wrote:
+>> > >>>>> This version has renamed the receivers (RX0/RX1). It may also fix 
+>> > >>>>> the
+>> > >>>>> 1200bps tx rate (while hopefully not breaking the rx rate)
+>> > >>>>>
+>> > >>>>> Let me know how it goes.
+>> > >>>>>
+>> > >>>>> I think more changes may be necessary to the data transmitter to
+>> > >>>>> permit
+>> > >>>>> the FEC to work.
+>> > >>>>> Do we have the facilities to test the FEC datalink?
+>> > >>>>>
+>> > >>>>> Clayton
+>> > >>>>>
+>> > >>>>>
+>> > >>>>>
+>> > >>>>> ----- Original Message ----- From: "Ian Ashley" 
+>> > >>>>> <iana@kcbbs.gen.nz>
+>> > >>>>> To: "Clayton Gumbrell" <clayton@cesolutions.co.nz>
+>> > >>>>> Cc: "Fred Kennedy" <fredk@kcbbs.gen.nz>; "Terry Osborne"
+>> > >>>>> <osbornes@paradise.net.nz>; "Ian Ashley" <iana@kcbbs.gen.nz>
+>> > >>>>> Sent: Monday, January 24, 2011 9:40 PM
+>> > >>>>> Subject: Re: new test app
+>> > >>>>>
+>> > >>>>>
+>> > >>>>>> Hi All, just to update: the new version of DrvTest now sets the 
+>> > >>>>>> Mux's
+>> > >>>>>> correctly.
+>> > >>>>>> All the lowercase commands a to n appear to work correctly and 
+>> > >>>>>> CDEF
+>> > >>>>>> also OK.
+>> > >>>>>> The y command works and I was able to find the data for the 5 
+>> > >>>>>> and 12
+>> > >>>>>> volt voltages/currents (chns 8 to 13).
+>> > >>>>>>
+>> > >>>>>> The only problem at present is the CW beacon enable (A) which
+>> > >>>>>> turns on
+>> > >>>>>> the FM TX when not meant to.
+>> > >>>>>>
+>> > >>>>>> The other minor problem is that the T command for sending data 
+>> > >>>>>> out
+>>
+>> > >>>>>> the
+>> > >>>>>> 1200bps port is set at 9600.
+>> > >>>>>> The t cmd for transmitting the TEST msg on 9600 works on 2m and 
+>> > >>>>>> 70cm
+>> > >>>>>> on the rf link.
+>> > >>>>>>
+>> > >>>>>> Here is a list of the commands so everyone knows what we are 
+>> > >>>>>> talking
+>> > >>>>>> about.
+>> > >>>>>> Commands:
+>> > >>>>>> ? - Display this help
+>> > >>>>>> t - tx data frame (portA)
+>> > >>>>>> T - tx data frame (portB)
+>> > >>>>>> z - IHU IO debug info
+>> > >>>>>>
+>> > >>>>>> a - tx mode off
+>> > >>>>>> b - tx mode Linear
+>> > >>>>>> c - tx mode 2m FM Rx1 Audio
+>> > >>>>>> d - tx mode 2m FM Rx2 Audio
+>> > >>>>>> e - tx mode 2m FM 9600 data
+>> > >>>>>> f - tx mode 2m FM 1200 data
+>> > >>>>>> g - tx mode 2m FM 9600 data & 70cm beacon (23cm rx enabled)
+>> > >>>>>> h - tx mode 2m FM 1200 data & 70cm beacon (23cm rx enabled)
+>> > >>>>>> i - tx mode off & 23cm rx enabled
+>> > >>>>>> j - tx mode Linear & 23cm rx enabled
+>> > >>>>>> k - tx mode 2m FM Rx1 Audio & 23cm rx enabled
+>> > >>>>>> l - tx mode 2m FM Rx2 Audio & 23cm rx enabled
+>> > >>>>>> m - tx mode 2m FM 9600 data & 23cm rx enabled
+>> > >>>>>> n - tx mode 2m FM 1200 data & 23cm rx enabled
+>> > >>>>>>
+>> > >>>>>> A - CW beacon enabled (Tx linear must be on)
+>> > >>>>>> B - CW beacon disabled
+>> > >>>>>> C - GPS enabled
+>> > >>>>>> D - GPS disabled
+>> > >>>>>> E - Camera enabled
+>> > >>>>>> F - Camera disabled
+>> > >>>>>>
+>> > >>>>>> Also on the receive side of KiwiSAT, both channels A (SCC-A 
+>> > >>>>>> 435.225
+>> > >>>>>> RX2) and B (SCC-B 435.245 RX1) are decoding packets as hex and 
+>> > >>>>>> ASCII.
+>> > >>>>>>
+>> > >>>>>> Note RX1 and RX2 may be renamed.
+>> > >>>>>>
+>> > >>>>>> Here is how the tlm is displayed as raw data:
+>> > >>>>>> Tx FM 9600 + 70cm beacon Mode
+>> > >>>>>> A|{y}<0x79>
+>> > >>>>>> ADC Samples:
+>> > >>>>>> 0: 2159 1: 2310 2: 1484 3: 1654
+>> > >>>>>> 4: 1253 5: 1245 6: 2297 7: 2124
+>> > >>>>>> 8: 1629 9: 3258 10: 3690 11: 1493
+>> > >>>>>> 12: 3703 13: 2036 14: 1227 15: 674
+>>
+>> > >>>>>> 16: 2119 17: 2137 18: 1327 19: 794
+>> > >>>>>> 20: 584 21: 483 22: 2033 23: 1962
+>> > >>>>>> 24: 2166 25: 2129 26: 1309 27: 779
+>> > >>>>>> 28: 570 29: 469 30: 2112 31: 4066
+>> > >>>>>> 32: 2106 33: 2384 34: 2006 35: 2496
+>> > >>>>>> 36: 1265 37: 14 38: 0 39: 0
+>> > >>>>>> 40: 3732 41: 50 42: 1424 43: 2381
+>> > >>>>>> 44: 45 45: 3159 46: 2385 47: 45
+>> > >>>>>> 48: 35 49: 2009 50: 1245 51: 17
+>> > >>>>>> 52: 170 53: 2 54: 0 55: 0
+>> > >>>>>> 56: 20 57: 993 58: 964 59: 348
+>> > >>>>>> 60: 352 61: 364 62: 371 63: 374
+>> > >>>>>>
+>> > >>>>>> Thanks Clayton for the new software.
+>> > >>>>>> Regards
+>> > >>>>>> Ian ZL1AOX
+>> > >>>>>>
+>> > >>>>>> On 24/01/2011 8:48 p.m., Clayton Gumbrell wrote:
+>> > >>>>>>> I have made the change to the MUX IO code - see how that goes.
+>> > >>>>>>>
+>> > >>>>>>> What do we refer to the receivers as - RX0/RX1 or RX1/RX2? I 
+>> > >>>>>>> need to
+>> > >>>>>>> update the code and HW document to match.
+>> > >>>>>>>
+>> > >>>>>>> This version also includes the ADC module. 'y' will output the
+>> > >>>>>>> result
+>> > >>>>>>> from all ADC modules. I have not tested this yet with my ADC
+>> > >>>>>>> card, but
+>> > >>>>>>> see how you go.
+>> > >>>>>>> ADC Channel allocations have yet to be documented, but numbers 
+>> > >>>>>>> go
+>> > >>>>>>> 0-7 =
+>> > >>>>>>> ADC chip channels. 0-31 then includes which 1 of 4 SPI channels 
+>> > >>>>>>> are
+>> > >>>>>>> being used. Then 0-31 = SELECT IO low; 32-63 = Select IO=high
+>> > >>>>>>> Channel numbers will not quite reflect that of the modules (eg 
+>> > >>>>>>> ADC
+>> > >>>>>>> cards
+>> > >>>>>>> and BCR use the IO-Select in the opposite sense), but then the
+>> > >>>>>>> numbers
+>> > >>>>>>> are just numbers, and the detail can be hidden inside program 
+>> > >>>>>>> code.
+>> > >>>>>>> I need to work out final channel allocations and scaling 
+>> > >>>>>>> factors to
+>> > >>>>>>> get
+>> > >>>>>>> real voltages. Some final readings of the flight hardware ADC
+>> > >>>>>>> reference
+>> > >>>>>>> voltages and the temperature sensors should be made to allow
+>> > >>>>>>> calibration
+>> > >>>>>>> parameters to be applied.
+>> > >>>>>>>
+>> > >>>>>>> My test app should now provide all of the functionality that 
+>> > >>>>>>> you
+>> > >>>>>>> were
+>> > >>>>>>> getting from eforth - is there anything missing?
+>> > >>>>>>>
+>> > >>>>>>> Next step is to develop the messages and the KSWUpLoader app.
+>> > >>>>>>>
+>> > >>>>>>> Were you able to send a packet from the kiwiSAT and receive it? 
+>> > >>>>>>> I
+>> > >>>>>>> cannot
+>> > >>>>>>> get my test setup to work here (I think the levels are wrong 
+>> > >>>>>>> here).
+>> > >>>>>>>
+>> > >>>>>>> Clayton
+>> > >>>>>>>
+>> > >>>>>>> ----- Original Message ----- From: "Ian Ashley" 
+>> > >>>>>>> <iana@kcbbs.gen.nz>
+>> > >>>>>>> To: "Clayton Gumbrell" <clayton@cesolutions.co.nz>
+>> > >>>>>>> Cc: "Fred Kennedy" <fredk@kcbbs.gen.nz>; "Terry Osborne"
+>> > >>>>>>> <osbornes@paradise.net.nz>; "Ian Ashley" <iana@kcbbs.gen.nz>
+>> > >>>>>>> Sent: Monday, January 24, 2011 6:02 PM
+>> > >>>>>>> Subject: Re: new test app
+>> > >>>>>>>
+>> > >>>>>>>
+>> > >>>>>>>> Hi Clayton, congratulations, the new software works well 
+>> > >>>>>>>> except for
+>> > >>>>>>>> the MUX control.
+>> > >>>>>>>>
+>> > >>>>>>>> I believe that there is an anomaly in the MUX control port.
+>> > >>>>>>>> On the IHU schematic sheet 8 of 10, U3 has the Mux0 line to 
+>> > >>>>>>>> the B
+>> > >>>>>>>> input and MUX1 to the A input.
+>> > >>>>>>>>
+>> > >>>>>>>> Copied from the KiwiSAT HW Description.doc
+>> > >>>>>>>>
+>> > >>>>>>>> MUX Control port
+>> > >>>>>>>> This register controls the two MUX output signals which is 
+>> > >>>>>>>> used to
+>> > >>>>>>>> select the audio source for the FM transmitter.
+>> > >>>>>>>>
+>> > >>>>>>>> MUX[1..0] FM Transmitter Audio Source
+>> > >>>>>>>> 0 0 9600bps Modulator
+>> > >>>>>>>> 0 1 1200bps Modulator
+>> > >>>>>>>> 1 0 Receiver 1
+>> > >>>>>>>> 1 1 Receiver 0
+>> > >>>>>>>>
+>> > >>>>>>>> I believe that the correct interpretation would be -
+>> > >>>>>>>>
+>> > >>>>>>>> MUX[1..0] FM Transmitter Audio Source
+>> > >>>>>>>> 0 0 9600bps Modulator
+>> > >>>>>>>> 1 0 1200bps Modulator
+>> > >>>>>>>> 0 1 Receiver 1
+>> > >>>>>>>> 1 1 Receiver 0
+>> > >>>>>>>>
+>> > >>>>>>>> If you agree, could the code for DrvTest be altered to suit 
+>> > >>>>>>>> and
+>> > >>>>>>>> I'll
+>> > >>>>>>>> confirm with my testing.
+>> > >>>>>>>> At present command d is not repeating the RX2 audio, but 
+>> > >>>>>>>> command f
+>> > >>>>>>>> does what d is supposed to do.
+>> > >>>>>>>> h, l and n are the other cmds affected.
+>> > >>>>>>>>
+>> > >>>>>>>> Hope this helps.
+>> > >>>>>>>> 73 Ian
+>> > >>>>>>>>
+>> > >>>>>>>>
+>> > >>>>>>>> On 24/01/2011 12:20 a.m., Clayton Gumbrell wrote:
+>> > >>>>>>>>> A new app for you to test Ian.
+>> > >>>>>>>>>
+>> > >>>>>>>>> press '?' on the console to see the available commands
+>> > >>>>>>>>>
+>> > >>>>>>>>> I have defined the various transmit modes ('a' - 'n'). Please
+>> > >>>>>>>>> check
+>> > >>>>>>>>> that
+>> > >>>>>>>>> they set up the required IOs and operate as expected.
+>> > >>>>>>>>>
+>> > >>>>>>>>> A Morse transmitter is also supported ('A' / 'B' to
+>> > >>>>>>>>> enable/disable) -
+>> > >>>>>>>>> note that the Linear Tx needs to be on to hear this.
+>> > >>>>>>>>>
+>> > >>>>>>>>> Also supported is the GPS on/off and camera on/off
+>> > >>>>>>>>>
+>> > >>>>>>>>> 'z' will report the current IO status (which should agree 
+>> > >>>>>>>>> with the
+>> > >>>>>>>>> various IO pins of the IHU)
+>> > >>>>>>>>> t/T allows you to transmit a packet - the transmitter will 
+>> > >>>>>>>>> need to
+>> > >>>>>>>>> be in
+>> > >>>>>>>>> the appropriate mode to hear this.
+>> > >>>>>>>>> Any packet messages received on either receiver will be 
+>> > >>>>>>>>> reported.
+>> > >>>>>>>>>
+>> > >>>>>>>>> I will continue to work on this, with the addition of an ADC
+>> > >>>>>>>>> module to
+>> > >>>>>>>>> read all the analogue channels. Then I can start to put the 
+>> > >>>>>>>>> IO and
+>> > >>>>>>>>> tx/rx
+>> > >>>>>>>>> messages sides together to get the link operational.
+>> > >>>>>>>>>
+>> > >>>>>>>>> Good luck!
+>> > >>>>>>>>>
+>> > >>>>>>>>> Clayton
+>> > >>>>>>>>>
+>> >
+>>
+>>
+>>
+>>
+>>
+>>
+>
+>
+> 
+ 

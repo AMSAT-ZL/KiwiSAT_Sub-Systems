@@ -1,0 +1,80 @@
+Return-path: <a_j_green@ww.co.nz>
+Received: from fep14.clear.net.nz (fep14 [192.168.16.115])
+ by local-daemon (CLEAR Net Mail) with ESMTP id <0JO800CBLQKJBX60@local-daemon>
+ for p/osbornes@clear.net.nz; Wed, 12 Sep 2007 17:43:32 +1200 (NZST)
+Received: from mxin2-orange.clear.net.nz
+ (lb2-srcnat.clear.net.nz [203.97.32.237]) by mx6.clear.net.nz (CLEAR Net Mail)
+ with ESMTP id <0JO800EX9QKEGL60@mx6.clear.net.nz> for
+ osbornes@paradise.net.nz; Wed, 12 Sep 2007 17:43:31 +1200 (NZST)
+Received: from loadbalancer1.orcon.net.nz (HELO mx5.orcon.net.nz)
+ ([219.88.242.3]) by mxin2-orange.clear.net.nz with ESMTP; Wed,
+ 12 Sep 2007 17:43:31 +1200
+Received: from Debian-exim by mx5.orcon.net.nz with local (Exim 4.67)
+	(envelope-from <a_j_green@ww.co.nz>)
+	id 1IVL0d-0001qi-3u	for osbornes@paradise.net.nz; Wed,
+ 12 Sep 2007 17:43:31 +1200
+Received: from port-60-234-109-35.orcon.net.nz ([60.234.109.35] helo=alcatraz)
+	by mx5.orcon.net.nz with esmtp (Exim 4.67)
+	(envelope-from <a_j_green@ww.co.nz>)	id 1IVL0b-0001oc-GG; Wed,
+ 12 Sep 2007 17:43:30 +1200
+Received: from 127.0.0.1 (AVG SMTP 7.5.485 [269.13.15/1002]); Wed,
+ 12 Sep 2007 17:43:14 +1200
+Date: Wed, 12 Sep 2007 17:42:09 +1200
+From: Austin Green <a_j_green@ww.co.nz>
+Subject: Multiple copies of boot loader
+X-Sender: austin@pop3.ww.co.nz
+X-Envelope-To: osbornes@paradise.net.nz
+To: fredk@kcbbs.gen.nz
+Cc: Terry Osborne <osbornes@paradise.net.nz>,
+ Clayton Gumbrell <clayton@camsensor.com>, jpsl@ihug.co.nz,
+ clayton.gumbrell@gmail.com, markaren1@xtra.co.nz, tcarrell@xtra.co.nz,
+ Phil Wakeman <phil@tmd.co.nz>, Ian Ashley <iana@kcbbs.gen.nz>
+Message-id: <3.0.5.32.20070912174209.00870b80@pop3.ww.co.nz>
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.5 (32)
+X-DSPAM-Check: by mx5.orcon.net.nz on Wed, 12 Sep 2007 17:43:30 +1200
+X-DSPAM-Result: Innocent
+X-DSPAM-Processed: Wed Sep 12 17:43:31 2007
+X-DSPAM-Confidence: 0.7629
+X-DSPAM-Improbability: 1 in 323 chance of being spam
+X-DSPAM-Probability: 0.0000
+Original-recipient: rfc822;osbornes@paradise.net.nz
+X-Antivirus: AVG for E-mail 7.5.446 [269.13.9/994]
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+
+Hi All,
+
+There seems to be quite a bit of support for the idea of
+multiple copies of the boot loader.  To avoid completely
+the single point of failure in letting the loader code do
+the selection, why not expand the hardware scheme already
+in place?  U43B is a 1-bit counter; it could be replaced
+by a 4-bit counter, then use the outputs to drive 2, 3 or
+4 of the high-order ROM address lines.  That would split
+the ROM into 4, 8 or 16 pieces, each of which would have
+a copy of the loader code.  If the loader decided it was
+unable to run for any reason, e.g. failed checksum, it
+would just halt and wait for the next reset, which would
+cycle the counter to the next copy.
+
+The ROM is 256K bytes, so the loader is given 128K under
+the present scheme.  Under the proposed scheme it would
+have 64K, 32K or 16K.  I'll have to code up a rough dummy
+version to see how it goes, but 16K is probably enough.
+
+Regards,
+Austin.
+
+
+
+-- 
+No virus found in this outgoing message.
+Checked by AVG Free Edition. 
+Version: 7.5.485 / Virus Database: 269.13.15/1002 - Release Date: 11/09/07 17:46
+
+
+-- 
+No virus found in this incoming message.
+Checked by AVG Free Edition.
+Version: 7.5.446 / Virus Database: 269.13.9/994 - Release Date: 7/09/2007 4:40 p.m.
+
